@@ -1,6 +1,6 @@
 package model;
 
-public class Cliente {
+public class Cliente implements ICliente {
 	
 	private String nome;
 	private String cpf;
@@ -33,9 +33,12 @@ public class Cliente {
 	public String toString() {
 		return "Cliente [nome=" + nome + ", cpf=" + cpf + "]";
 	}
-	
-	
-	
+
+	@Override
+	public String cadastrarCliente() {
+		// TODO Auto-generated method stub
+		return this.nome + "\n" + this.cpf;
+	}
 	
 
 }

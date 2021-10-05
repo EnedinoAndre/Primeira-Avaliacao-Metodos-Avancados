@@ -7,10 +7,10 @@ import Sabores.Cerveja;
 public class Pedido implements IPedido {
 	
 	private ArrayList<Cerveja> cerveja = new ArrayList<>();
-	private Cliente cliente;
+	private ICliente cliente;
 	private double valor;
 	
-	public Pedido(ArrayList<Cerveja> cerveja, Cliente cliente) {
+	public Pedido(ArrayList<Cerveja> cerveja, ICliente cliente) {
 		
 		this.cerveja = cerveja;
 		this.cliente = cliente;
@@ -20,7 +20,7 @@ public class Pedido implements IPedido {
 		return cerveja;
 	}
 	
-	public Cliente getCliente() {
+	public ICliente getCliente() {
 		return cliente;
 	}
 
